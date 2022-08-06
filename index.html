@@ -10,24 +10,26 @@
 <body>
   <main>
     <img 
-      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" 
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" 
       alt="imagem do pokemon"
       class="pokemon-img"
     />
     <h1 class="pokemon-data">
-      <span class="pokemon-number">1</span> -
-      <span class="pokemon-name">pikachu</span>
+      <span class="pokemon-number"></span> -
+      <span class="pokemon-name"></span>
     </h1>
     
     <form>
-      <input type="search" placeholder="Digite o nome do pokemón..." required />
-      <div class="buttons">
-        <button type="submit">< Anterior</button>
-        <button type="submit">Próximo ></button>
-      </div>
+      <input id="search-pokemon" type="search" placeholder="Digite o nome do pokemón..." />
     </form>
+
+    <div class="buttons">
+      <button id="prev-pokemon">< Anterior</button>
+      <button id="next-pokemon">Próximo ></button>
+    </div>
 
     <img src="./images/pokedex.png" alt="imagem da pokédex" class="bg" />
   </main>
+  <script src="./script/index.js"></script>
 </body>
 </html>
