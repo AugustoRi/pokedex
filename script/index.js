@@ -29,8 +29,9 @@ const renderPokemon = async (pokemon) => {
 
   if (!data) {
     pokemonImg.style.display = "none";
-    pokemonName.textContent = "Not found";
+    pokemonName.textContent = "error";
     pokemonNumber.textContent = "";
+    pokemonSelected = 0;
     return;
   }
 
